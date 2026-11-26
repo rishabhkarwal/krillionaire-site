@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Krillionaire privacy, terms and credits</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.5rem}h2{font-size:1.1rem;margin-top:1.8rem}h3{font-size:1rem;margin-top:1.2rem}li{margin:.3rem 0}</style></head><body>
+<h1>Krillionaire</h1>
+<p>An unofficial, independent fan-made browser extension for krillion.io. It is not affiliated with, endorsed by or sponsored by krillion.io.</p>
+<p><a href="#privacy">Privacy policy</a> · <a href="#terms">Terms of use</a> · <a href="#credits">Credits</a> · <a href="mailto:krillionaire.support@gmail.com">Contact</a></p>
+
+<h2 id="privacy">Privacy policy</h2>
+<p>Nothing is sent to the Krillionaire server, and no AI suggestion is requested, until you press continue on the first-run popup.</p>
+<p><b>Opting out:</b> sharing accepted answers is on by default. You can turn it off on that popup or at any time in settings. Anything not yet sent is then dropped. Answer lookups still work, so prompts and your install ID are still sent.</p>
+<h3>What the extension reads</h3>
+<p>On krillion.io it reads the prompt and game state, including answers shown in your game, to show suggestions and run the features you turn on.</p>
+<h3>Sent to the Krillionaire server</h3>
+<ul>
+<li>The prompt, to look up answers.</li>
+<li>While sharing is on, answers the game accepts in your games, both yours and other players', with their rarity tier. Player names are not sent.</li>
+<li>A random install ID, used for rate limits, abuse protection and handling repeat reports.</li>
+<li>Your network address, which comes with any web request. The application stores only a keyed hash of its /24 (IPv4) or /56 (IPv6) range. Web server error logs may briefly contain addresses.</li>
+</ul>
+<h3>Never sent to the Krillionaire server</h3>
+<p>Rejected answers, room codes, player names, chat, account details, AI keys or browsing history.</p>
+<h3>Who else receives data</h3>
+<ul>
+<li><b>Oracle Cloud</b> hosts the server.</li>
+<li><b>krillionanswers.net</b>: the server may look up a prompt it does not know there. Your ID and address are not passed on.</li>
+<li><b>Your AI provider</b>, only if you add your own key (Google Gemini, Groq, OpenAI or Anthropic). The extension sends your key to that provider to list models and request suggestions. A request includes the prompt, example answers and answers already used in the round, including other players'. The provider's own privacy policy and terms apply.</li>
+<li><b>Other users</b> may receive an answer and its tier once enough separate sources report it. No ID is attached.</li>
+</ul>
+<h3>Stored in your browser</h3>
+<p>Settings, AI keys, your sharing choice, the install ID, a lookup cache and answers waiting to be sent are kept in the extension's storage. Panel choices and this round's used answers are kept in krillion.io's site storage, which that site can read. Uninstalling removes the extension's storage; clear krillion.io's site data to remove the rest.</p>
+<h3>How long the server keeps data</h3>
+<ul>
+<li>Individual reports and abuse flags: about 14 days. Short-term rate-limit and delivery records: a few days.</li>
+<li>Backups: a further 14 days.</li>
+<li>Shared answers and prompts queued for lookup: kept without your ID or address.</li>
+</ul>
+<h3>Use of data and Limited Use</h3>
+<p>Data is used only to provide and protect the features above. It is not sold, used for advertising, or used for credit or lending decisions. People do not read it except for security, to comply with law, or with your consent.</p>
+<p>Krillionaire's use of this information adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+<p>Data is sent over HTTPS. For privacy questions or requests, email <a href="mailto:krillionaire.support@gmail.com">krillionaire.support@gmail.com</a>. Changes to this policy will be posted on this page.</p>
+
+<h2 id="terms">Terms of use</h2>
+<p>By continuing past the first-run popup or using the extension, you accept these terms. If you do not accept them, uninstall it.</p>
+<ul>
+<li><b>Unofficial.</b> The Krillion name, game and artwork belong to their owner and are named only to say what this tool works with.</li>
+<li><b>Automation.</b> Auto-play types and sends answers for you and auto-join joins games for you. Both are off until you turn them on. They may break the game's rules, affect other players or your rating, and get you limited or blocked. You are responsible for how and where you use them.</li>
+<li><b>Acceptable use.</b> Do not use Krillionaire to get around blocks or bot checks, to overload any service, or where the players or the game's owner do not allow it.</li>
+<li><b>No warranty.</b> It is free and provided as is. Answers and scores may be wrong. Features or the server may change or stop at any time.</li>
+<li><b>Liability.</b> As far as the law allows, the developer is not liable for losses from using it. Rights the law gives you that cannot be limited still apply.</li>
+<li><b>Your AI key.</b> The provider's terms and charges apply.</li>
+<li><b>Removal requests.</b> Rights holders can email the address above.</li>
+</ul>
+
+<h2 id="credits">Credits</h2>
+<ul>
+<li>Answer data: <a href="https://github.com/Microhx/krillion-answers">krillion-answers</a> by Microhx, under its <a href="https://github.com/Microhx/krillion-answers/blob/main/DATA-NOTICE.md">data notice</a>. The game content remains its owner's. Also <a href="https://krillionanswers.net">krillionanswers.net</a>.</li>
+<li>The panel's look and the six tiers follow <a href="https://krillion.io">krillion.io</a>.</li>
+<li>Avatar and gold avatar images are krillion.io's, loaded from its site, not included in the extension and not owned by Krillionaire.</li>
+<li>The icon was drawn for Krillionaire, inspired by Krillion's pixel style.</li>
+</ul>
+<p>Credit does not mean any of these people or sites endorse Krillionaire or have given it permission.</p>
+</body></html>
