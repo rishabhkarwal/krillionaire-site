@@ -2,27 +2,35 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Krillionaire privacy, terms and credits</title>
 <style>
-:root{--bg:#f4f6fb;--card:#fff;--ink:#17223a;--soft:#52617f;--line:#dbe2ef;--accent:#c02660;--head:#0a1830}
-@media(prefers-color-scheme:dark){:root{--bg:#060d1a;--card:#0c172a;--ink:#e8f1ff;--soft:#9fb4d6;--line:#1f3354;--accent:#ff7aa4;--head:#03060c}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,sans-serif}
-header{background:var(--head);color:#e8f1ff;padding:2.5rem 16px 1.5rem;border-bottom:3px solid #ffd166}
-.wrap{max-width:720px;margin:0 auto}
-h1,h2{font-family:ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.12em}
-h1{margin:0 0 .4rem;font-size:1.8rem;color:#ffd166;text-shadow:-2px 2px 0 #ff5d8f66,2px -2px 0 #4de3ff66}
-header p{margin:0;color:#b9c8e2}
-nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
-nav a{color:#e8f1ff;text-decoration:none;border:1px solid #2a4468;padding:.35rem .8rem;border-radius:4px;font-size:.9rem}
-nav a:hover,nav a:focus-visible{border-color:#4de3ff;color:#4de3ff}
-main{padding:1rem 16px 3rem}
-section{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.5rem 1.25rem 1rem;margin-top:1.25rem;scroll-margin-top:1rem}
-h2{font-size:1.15rem}
-h3{font-size:1rem;margin:1.6rem 0 .4rem;padding-top:1rem;border-top:1px solid var(--line)}
-a{color:var(--accent);overflow-wrap:anywhere}li{margin:.45rem 0}ul{padding-left:1.2rem}
-blockquote{margin:.75rem 0;padding:.25rem 1rem;border-left:3px solid #ffd166;color:var(--soft);font-size:.92rem}
+*{box-sizing:border-box}html{scroll-behavior:smooth;color-scheme:dark}
+body{margin:0;min-height:100vh;color:#e8f1ff;font:16px/1.7 "VT323",ui-monospace,Menlo,"Courier New",monospace;letter-spacing:.02em;
+background:radial-gradient(900px 500px at 50% -80px,#12315a 0,transparent 70%),linear-gradient(#0a1830,#03060c 70%) fixed #03060c;text-shadow:0 1px 2px #000b}
+.wrap{max-width:740px;margin:0 auto}
+header{padding:3rem 16px .5rem;text-align:center}
+h1{margin:0 0 1rem;font-size:clamp(1.9rem,8.5vw,3.4rem);font-weight:700;text-transform:uppercase;white-space:nowrap;letter-spacing:0;filter:drop-shadow(0 0 14px #4de3ff33)}
+h1 i{display:inline-block;font-style:normal;min-width:.62em;animation:bob 3.6s ease-in-out infinite;text-shadow:calc(var(--o)*-1) var(--o) 0 #ff5d8f99,var(--o) calc(var(--o)*-1) 0 #4de3ff99}
+@keyframes bob{0%,100%{transform:translateY(-3px)}50%{transform:translateY(3px)}}
+@media(prefers-reduced-motion:reduce){h1 i{animation:none}html{scroll-behavior:auto}}
+header p{margin:0;color:#9fb4d6}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-top:1.4rem}
+nav a{color:#9fb4d6;text-decoration:none;text-transform:uppercase;letter-spacing:.18em;font-size:.82rem;padding:.35rem .8rem;background:#0b172999;border:2px solid #20375a}
+nav a:hover,nav a:focus-visible{color:#4de3ff;border-color:#4de3ff;background:#0e2236;box-shadow:0 0 12px #4de3ff44;text-shadow:0 0 7px #4de3ff88}
+main{padding:1rem 16px 4rem}
+section{--c:#4de3ff;margin-top:1.6rem;padding:.4rem 1.4rem 1.1rem;scroll-margin-top:1rem;background:linear-gradient(#05090fd9,#03060ce6);border:2px solid #0a1424;outline:2px solid #1b3050c0;outline-offset:-4px;box-shadow:0 0 0 1px #3a5a8a55,0 0 28px #4de3ff1f,0 10px 30px #000a}
+#privacy{--c:#ffd166}#terms{--c:#ff5d8f}#credits{--c:#9d7bff}#data-notice{--c:#4de3ff}
+h2{display:flex;align-items:center;gap:12px;font-size:1.1rem;text-transform:uppercase;letter-spacing:.24em;color:var(--c);text-shadow:0 0 12px color-mix(in srgb,var(--c) 65%,transparent)}
+h2::after{content:"";flex:1;min-width:12px;border-top:1px dashed #2a4468}
+h3{margin:1.6rem 0 .4rem;padding-top:1rem;border-top:1px dashed #2a4468;font-size:.95rem;text-transform:uppercase;letter-spacing:.14em;color:#4de3ff;text-shadow:0 0 10px #4de3ff55}
+p,li{color:#b9c8e2}b{color:#e8f1ff}
+li{margin:.45rem 0}li::marker{color:var(--c)}ul{padding-left:1.2rem}
+a{color:#ff5d8f;text-underline-offset:3px;overflow-wrap:anywhere}
+section a:hover{color:#ff8fb1;text-shadow:0 0 8px #ff5d8f88}
+a:focus-visible{outline:2px solid #4de3ff;outline-offset:2px}
+blockquote{margin:.75rem 0;padding:.25rem 1rem;border-left:3px solid #ffd166;background:#060e1bcc;font-size:.92rem;box-shadow:-6px 0 14px -8px #ffd166aa}
+::selection{background:#ffd166;color:#03060c;text-shadow:none}
 </style></head><body>
 <header><div class="wrap">
-<h1>Krillionaire</h1>
+<h1 aria-label="Krillionaire"><i style="animation-delay:-0.00s;--o:3.20px;color:color-mix(in srgb,#ffd166 0%,#e8f1ff)" aria-hidden="true">K</i><i style="animation-delay:-0.28s;--o:3.13px;color:color-mix(in srgb,#ffd166 9%,#e8f1ff)" aria-hidden="true">r</i><i style="animation-delay:-0.56s;--o:3.05px;color:color-mix(in srgb,#ffd166 18%,#e8f1ff)" aria-hidden="true">i</i><i style="animation-delay:-0.84s;--o:2.98px;color:color-mix(in srgb,#ffd166 27%,#e8f1ff)" aria-hidden="true">l</i><i style="animation-delay:-1.12s;--o:2.91px;color:color-mix(in srgb,#ffd166 36%,#e8f1ff)" aria-hidden="true">l</i><i style="animation-delay:-1.40s;--o:2.84px;color:color-mix(in srgb,#ffd166 45%,#e8f1ff)" aria-hidden="true">i</i><i style="animation-delay:-1.68s;--o:2.76px;color:color-mix(in srgb,#ffd166 55%,#e8f1ff)" aria-hidden="true">o</i><i style="animation-delay:-1.96s;--o:2.69px;color:color-mix(in srgb,#ffd166 64%,#e8f1ff)" aria-hidden="true">n</i><i style="animation-delay:-2.24s;--o:2.62px;color:color-mix(in srgb,#ffd166 73%,#e8f1ff)" aria-hidden="true">a</i><i style="animation-delay:-2.52s;--o:2.55px;color:color-mix(in srgb,#ffd166 82%,#e8f1ff)" aria-hidden="true">i</i><i style="animation-delay:-2.80s;--o:2.47px;color:color-mix(in srgb,#ffd166 91%,#e8f1ff)" aria-hidden="true">r</i><i style="animation-delay:-3.08s;--o:2.40px;color:color-mix(in srgb,#ffd166 100%,#e8f1ff)" aria-hidden="true">e</i></h1>
 <p>An unofficial, independent fan-made browser extension for krillion.io. It is not affiliated with, endorsed by or sponsored by krillion.io.</p>
 <nav><a href="#privacy">Privacy policy</a><a href="#terms">Terms of use</a><a href="#credits">Credits</a><a href="#data-notice">Data notice</a><a href="mailto:krillionaire.support@gmail.com">Contact</a></nav>
 </div></header>
